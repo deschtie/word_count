@@ -1,4 +1,5 @@
- 
+
+
 class String
   define_method(:word_counter) do |sentence|
     word_to_count = self
@@ -7,9 +8,7 @@ class String
     words = sentence.split()
     words.each() do |word|
       if word == (word_to_count)
-        word_total == word_total + 1
-      else
-        word_total = 0
+        word_total += 1
       end
     end
     word_total
