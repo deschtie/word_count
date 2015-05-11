@@ -1,6 +1,7 @@
 
 
 class String
+
   define_method(:word_counter) do |sentence|
     word_to_count = self
     word_total = 0

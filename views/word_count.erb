@@ -1,0 +1,11 @@
+<h1>Word Freqency</h1>
+
+<% if @word.word_counter(@sentence) >= 1 %>
+Your word appears <%= @word_total %> times.
+
+<% else %>
+
+<h4> Your word is not found!
+  
+<% end %>
+
