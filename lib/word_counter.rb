@@ -1,11 +1,10 @@
 
-
 class String
 
   define_method(:word_counter) do |sentence|
     word_to_count = self
     word_total = 0
-    sentence = sentence.downcase()
+    sentence = sentence.downcase().delete('^a-z ')
     words = sentence.split()
     words.each() do |word|
       if word == (word_to_count)
@@ -15,3 +14,4 @@ class String
     word_total
   end
 end
+
